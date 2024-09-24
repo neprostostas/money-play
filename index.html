@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" data-country="ca" class="curr_ca en hide">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Money Play</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <script src="js/gsap.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="container">
+            <div class="lang_switcher_outer">
+                <div class="lang_switcher">
+                    <div class="curr_lang">
+                        <img src="images/en.png" class="lang_flag" alt="">
+                        <span>en</span>
+                    </div>
+                    <i class="lang_arr"></i>
+                </div>
+                <ul class="lang_list">
+                    <li class="lang_list_item curr" data-lang="en">
+                        <img src="images/en.png" class="lang_flag" alt="">
+                        <span>en</span>
+                    </li>
+                    <!--  <li class="lang_list_item" data-lang="de">
+                        <img src="de.png" class="lang_flag" alt="">
+                        <span>de</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="fi">
+                        <img src="fi.png" class="lang_flag" alt="">
+                        <span>fi</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="pl">
+                        <img src="pl.png" class="lang_flag" alt="">
+                        <span>pl</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="pt">
+                        <img src="pt.png" class="lang_flag" alt="">
+                        <span>pt</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="es">
+                        <img src="es.png" class="lang_flag" alt="">
+                        <span>es</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="ro">
+                        <img src="ro.png" class="lang_flag" alt="">
+                        <span>ro</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="hu">
+                        <img src="hu.png" class="lang_flag" alt="">
+                        <span>hu</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="fr">
+                        <img src="fr.png" class="lang_flag" alt="">
+                        <span>fr</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="ph">
+                        <img src="ph.png" class="lang_flag" alt="">
+                        <span>ph</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="vn">
+                        <img src="vn.png" class="lang_flag" alt="">
+                        <span>vn</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="th">
+                        <img src="th.png" class="lang_flag" alt="">
+                        <span>th</span>
+                    </li>
+                   <li class="lang_list_item" data-lang="cz">
+                        <img src="./img/flags/cz.png" class="lang_flag" alt="">
+                        <span>cz</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="no">
+                        <img src="no.png" class="lang_flag" alt="">
+                        <span>no</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="jp">
+                        <img src="jp.png" class="lang_flag" alt="">
+                        <span>jp</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="lt">
+                        <img src="lt.png" class="lang_flag" alt="">
+                        <span>lt</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="lv">
+                        <img src="lv.png" class="lang_flag" alt="">
+                        <span>lv</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="gr">
+                        <img src="gr.png" class="lang_flag" alt="">
+                        <span>gr</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="ee">
+                        <img src="ee.png" class="lang_flag" alt="">
+                        <span>ee</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="sk">
+                        <img src="sk.png" class="lang_flag" alt="">
+                        <span>sk</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="se">
+                        <img src="se.png" class="lang_flag" alt="">
+                        <span>se</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="dk">
+                        <img src="dk.png" class="lang_flag" alt="">
+                        <span>dk</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="it">
+                        <img src="it.png" class="lang_flag" alt="">
+                        <span>it</span>
+                    </li>
+                    <li class="lang_list_item" data-lang="bg">
+                        <img src="it.png" class="lang_flag" alt="">
+                        <span>bg</span>
+                    </li>-->
+                </ul>
+            </div>
+            <a href="" class="logo" id="logo">
+                <img class="logo__desk" src="images/JPC_Logo_Col_Dark_800.png" alt="">
+                <img class="logo__mob" src="images/JPC_Logo_Col_Dark_800.png" alt="">
+            </a>
+            <div class="title" id="title">
+                <div class="title__mask"></div>
+                <div class="title__first  title__content" id="title__first">
+                    <span class="en">Press spin</span>
+                    <span class="bg">Натиснете завъртане</span>
+                    <span class="ru">Нажмите Крутить</span>
+                    <span class="de">Drücken dreh</span>
+                    <span class="fi">Paina spin</span>
+                    <span class="pl">Naciśnij spin</span>
+                    <span class="pt">Pressione spin</span>
+                    <span class="es">Presione Spin </span>
+                    <span class="ro">Apăsați Spin</span>
+                    <span class="hu">Nyomja meg<br> a centrifugálást</span>
+                    <span class="fr">Appuyez sur Spin</span>
+                    <span class="ph">Pindutin ang Spin</span>
+                    <span class="vn">Nhấn Spin </span>
+                    <span class="th">กดสปิน</span>
+                    <span class="cz">Stiskněte Spin</span>
+                    <span class="jp">スピン </span>
+                    <span class="no">Trykk på spinn </span>
+                    <span class="gr">�&nbsp;ατήστε Spin </span>
+                    <span class="lt">Paspauskite sukimą </span>
+                    <span class="lv">Nospiediet spin </span>
+                    <span class="se">Tryck på spin </span>
+                    <span class="ee">Vajutage spin</span>
+                    <span class="sk">Stlačte spin</span>
+                    <span class="ua">Натисніть Крутити</span>
+                    <span class="dk">Tryk på spin</span>
+                    <span class="it">Premere Spin</span>
+                </div>
+                <div class="title__second title__hidden title__content" id="title__second">
+                    <span class="en">Good luck</span>
+                    <span class="bg">Късмет</span>
+                    <span class="ru">Удачи</span>
+                    <span class="de">Viel Glück</span>
+                    <span class="fi">onnea</span>
+                    <span class="pl">powodzenia</span>
+                    <span class="pt">boa sorte</span>
+                    <span class="es">Buena suerte</span>
+                    <span class="ro">Noroc</span>
+                    <span class="hu">sok szerencsét</span>
+                    <span class="fr">Bonne chance</span>
+                    <span class="ph">Good Luck</span>
+                    <span class="vn">Chúc may mắn </span>
+                    <span class="th">โชคดี</span>
+                    <span class="cz">Hodně štěstí</span>
+                    <span class="jp">幸運を押してく�&nbsp;さい</span>
+                    <span class="no">lykke til</span>
+                    <span class="gr">Καλή τύχη</span>
+                    <span class="lt">sėkmės</span>
+                    <span class="lv">veiksmi</span>
+                    <span class="se">lycka till</span>
+                    <span class="ee">palju õnne</span>
+                    <span class="sk">veľa šťastia</span>
+                    <span class="ua">Удачі</span>
+                    <span class="dk">held og lykke</span>
+                    <span class="it">Buona fortuna</span>
+                </div>
+                <div class="title__card title__hidden title__content" id="title__card">
+                    <span class="en">SCRATCH THE CARDS</span>
+                    <span class="bg">ИЗД�&nbsp;АНЕТЕ КА�&nbsp;ТИТЕ</span>
+                    <span class="ru">Стереть карты</span>
+                    <span class="de">Kratzen Sie die Karten</span>
+                    <span class="fi">Naarmuta kortteja</span>
+                    <span class="pl">Zarysuj karty</span>
+                    <span class="pt">Arranhe as cartas</span>
+                    <span class="es">Rascar las tarjetas</span>
+                    <span class="ro">Zgârie cărțile</span>
+                    <span class="hu">Scratch a kártyák</span>
+                    <span class="fr">Grattre les cartes</span>
+                    <span class="ph">Kiskisan ang mga kard</span>
+                    <span class="vn">C�&nbsp;o thẻ</span>
+                    <span class="th">เกาการ์ด</span>
+                    <span class="cz">Poškrábat karty</span>
+                    <span class="jp">カード</span>
+                    <span class="no">Skrap kortene</span>
+                    <span class="gr">Ξύστε τις κάρτες</span>
+                    <span class="lt">Nubraižykite kortas</span>
+                    <span class="lv">Skrāpēt kartes</span>
+                    <span class="se">Skrapa korten</span>
+                    <span class="ee">Kriimustage kaarte</span>
+                    <span class="sk">Poškriabajte karty</span>
+                    <span class="ua">Стерти картки</span>
+                    <span class="dk">Skrabe kortene</span>
+                    <span class="it">Gratta le carte</span>
+                </div>
+                <div class="title__final title__hidden  title__content" id="title__final">
+                    <span class="en">BIG WIN</span>
+                    <span class="bg">ГОЛЯМА ПЕЧАЛБА</span>
+                    <span class="ru">большая победа</span>
+                    <span class="de">großen Gewinn</span>
+                    <span class="fi"> iso voitto</span>
+                    <span class="pl">Big Win</span>
+                    <span class="pt">grande vitória</span>
+                    <span class="es">gran victoria</span>
+                    <span class="ro">câștigul mare</span>
+                    <span class="hu"> nagy győzelem</span>
+                    <span class="fr">grosse victoire</span>
+                    <span class="ph">malaking panalo</span>
+                    <span class="vn">chiến thắng lớn</span>
+                    <span class="th">ชัยชนะครั้งใหญ่</span>
+                    <span class="cz">velké vítězství</span>
+                    <span class="jp">大きな勝利を傷つけます</span>
+                    <span class="no">stor gevinst</span>
+                    <span class="gr">μεγάλη νίκη</span>
+                    <span class="lt">BIG WIN</span>
+                    <span class="lv"> lielo uzvaru</span>
+                    <span class="se"> stor vinst</span>
+                    <span class="ee">suur võit</span>
+                    <span class="sk"> veľkú výhru</span>
+                    <span class="ua">Великий виграш</span>
+                    <span class="dk">Store sejr</span>
+                    <span class="it">Grande vittoria</span>
+                </div>
+                <div class="coins" id="coins">
+                    <img src="images/coins.gif" alt="">
+                </div>
+            </div>
+            <div class="fruits__mob">
+                <img src="images/fruits-mob.png" alt="">
+            </div>
+            <div class="wheel " id="wheel">
+                <div class="wheel__around">
+                    <img src="images/wheel-around.png" alt="">
+                </div>
+                <div class="wheel__around_mob">
+                    <img src="images/wheel-around-mob.png" alt="">
+                </div>
+                <div class="wheel__button">
+                    <span class="en">SPIN</span>
+                    <span class="bg">Завъртете</span>
+                    <span class="ru">Крутить</span>
+                    <span class="de">Dreh</span>
+                    <span class="fi">Pyörittää</span>
+                    <span class="pl">zakręc</span>
+                    <span class="pt">Rodar</span>
+                    <span class="es">Girar</span>
+                    <span class="ro">A învârti</span>
+                    <span class="hu">Centrifugálás</span>
+                    <span class="fr">Rotation</span>
+                    <span class="ph">Paikutin</span>
+                    <span class="vn">Quay</span>
+                    <span class="th">การหมุน</span>
+                    <span class="cz">Roztočit</span>
+                    <span class="jp">スピン</span>
+                    <span class="no">SNURRE<br> RUNDT</span>
+                    <span class="gr">Γνέθω</span>
+                    <span class="lt">Suktis</span>
+                    <span class="lv">Griezties</span>
+                    <span class="se">Snurra</span>
+                    <span class="ee">Keerutama</span>
+                    <span class="sk">Točiť sa</span>
+                    <span class="ua">Крутити</span>
+                    <span class="dk">Spin</span>
+                    <span class="it">Rotazione</span>
+                </div>
+                <div class="wheel__wrapper">
+                    <img src="images/wheel-wrapper.png" alt="">
+                </div>
+                <div id="wheel__spinner" class="wheel__spinner wheel__spinner_animated">
+                    <div class="wheel__text wheel__text-1">
+                        <div class="wheel__bonus_wrap wheel__bonus-1">
+                            <div class="wheel__bonus">
+                                <span>180</span>
+                                <span class="en">FS</span>
+                                <span class="bg">FS</span>
+                                <span class="de">FS</span>
+                                <span class="fi">FS</span>
+                                <span class="pl">FS</span>
+                                <span class="pt">RG</span>
+                                <span class="es">TG</span>
+                                <span class="ro">RG</span>
+                                <span class="hu">IP</span>
+                                <span class="fr">TG</span>
+                                <span class="ph">LS</span>
+                                <span class="vn">QMP</span>
+                                <span class="th">FS</span>
+                                <span class="cz">ZZ</span>
+                                <span class="jp">FS</span>
+                                <span class="no">GS</span>
+                                <span class="gr">FS</span>
+                                <span class="lt">NS</span>
+                                <span class="lv">BG</span>
+                                <span class="se">GS</span>
+                                <span class="ee">TK</span>
+                                <span class="sk">ZZ</span>
+                                <span class="dk">GS</span>
+                                <span class="it">GG</span>
+                            </div>
+                        </div>
+                        <div class="wheel__bonus_wrap wheel__bonus-2">
+                            <div class="wheel__bonus">
+                                <span>200</span>
+                                <span class="en">FS</span>
+                                <span class="bg">FS</span>
+                                <span class="de">FS</span>
+                                <span class="fi">FS</span>
+                                <span class="pl">FS</span>
+                                <span class="pt">RG</span>
+                                <span class="es">TG</span>
+                                <span class="ro">RG</span>
+                                <span class="hu">IP</span>
+                                <span class="fr">TG</span>
+                                <span class="ph">LS</span>
+                                <span class="vn">QMP</span>
+                                <span class="th">FS</span>
+                                <span class="cz">ZZ</span>
+                                <span class="jp">FS</span>
+                                <span class="no">GS</span>
+                                <span class="gr">FS</span>
+                                <span class="lt">NS</span>
+                                <span class="lv">BG</span>
+                                <span class="se">GS</span>
+                                <span class="ee">TK</span>
+                                <span class="sk">ZZ</span>
+                                <span class="dk">GS</span>
+                                <span class="it">GG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wheel__text wheel__text-2">
+                        <div class="wheel__bonus_wrap wheel__bonus-1">
+                            <div class="wheel__bonus">
+                                <span>180</span>
+                                <span class="en">FS</span>
+                                <span class="bg">FS</span>
+                                <span class="de">FS</span>
+                                <span class="fi">FS</span>
+                                <span class="pl">FS</span>
+                                <span class="pt">RG</span>
+                                <span class="es">TG</span>
+                                <span class="ro">RG</span>
+                                <span class="hu">IP</span>
+                                <span class="fr">TG</span>
+                                <span class="ph">LS</span>
+                                <span class="vn">QMP</span>
+                                <span class="th">FS</span>
+                                <span class="cz">ZZ</span>
+                                <span class="jp">FS</span>
+                                <span class="no">GS</span>
+                                <span class="gr">FS</span>
+                                <span class="lt">NS</span>
+                                <span class="lv">BG</span>
+                                <span class="se">GS</span>
+                                <span class="ee">TK</span>
+                                <span class="sk">ZZ</span>
+                                <span class="dk">GS</span>
+                                <span class="it">GG</span>
+                            </div>
+                        </div>
+                        <div class="wheel__bonus_wrap wheel__bonus-2">
+                            <div class="wheel__bonus">
+                                <span>75</span>
+                                <span class="en">FS</span>
+                                <span class="bg">FS</span>
+                                <span class="de">FS</span>
+                                <span class="fi">FS</span>
+                                <span class="pl">FS</span>
+                                <span class="pt">RG</span>
+                                <span class="es">TG</span>
+                                <span class="ro">RG</span>
+                                <span class="hu">IP</span>
+                                <span class="fr">TG</span>
+                                <span class="ph">LS</span>
+                                <span class="vn">QMP</span>
+                                <span class="th">FS</span>
+                                <span class="cz">ZZ</span>
+                                <span class="jp">FS</span>
+                                <span class="no">GS</span>
+                                <span class="gr">FS</span>
+                                <span class="lt">NS</span>
+                                <span class="lv">BG</span>
+                                <span class="se">GS</span>
+                                <span class="ee">TK</span>
+                                <span class="sk">ZZ</span>
+                                <span class="dk">GS</span>
+                                <span class="it">GG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wheel__text wheel__text-3">
+                        <div class="wheel__bonus_wrap wheel__bonus-1">
+                            <div class="wheel__bonus">
+                                <span>150</span>
+                                <span class="en">FS</span>
+                                <span class="bg">FS</span>
+                                <span class="de">FS</span>
+                                <span class="fi">FS</span>
+                                <span class="pl">FS</span>
+                                <span class="pt">RG</span>
+                                <span class="es">TG</span>
+                                <span class="ro">RG</span>
+                                <span class="hu">IP</span>
+                                <span class="fr">TG</span>
+                                <span class="ph">LS</span>
+                                <span class="vn">QMP</span>
+                                <span class="th">FS</span>
+                                <span class="cz">ZZ</span>
+                                <span class="jp">FS</span>
+                                <span class="no">GS</span>
+                                <span class="gr">FS</span>
+                                <span class="lt">NS</span>
+                                <span class="lv">BG</span>
+                                <span class="se">GS</span>
+                                <span class="ee">TK</span>
+                                <span class="sk">ZZ</span>
+                                <span class="dk">GS</span>
+                                <span class="it">GG</span>
+                            </div>
+                        </div>
+                        <div class="wheel__bonus_wrap wheel__bonus-2">
+                            <div class="wheel__bonus">
+                                <span>50</span>
+                                <span class="en">FS</span>
+                                <span class="bg">FS</span>
+                                <span class="de">FS</span>
+                                <span class="fi">FS</span>
+                                <span class="pl">FS</span>
+                                <span class="pt">RG</span>
+                                <span class="es">TG</span>
+                                <span class="ro">RG</span>
+                                <span class="hu">IP</span>
+                                <span class="fr">TG</span>
+                                <span class="ph">LS</span>
+                                <span class="vn">QMP</span>
+                                <span class="th">FS</span>
+                                <span class="cz">ZZ</span>
+                                <span class="jp">FS</span>
+                                <span class="no">GS</span>
+                                <span class="gr">FS</span>
+                                <span class="lt">NS</span>
+                                <span class="lv">BG</span>
+                                <span class="se">GS</span>
+                                <span class="ee">TK</span>
+                                <span class="sk">ZZ</span>
+                                <span class="dk">GS</span>
+                                <span class="it">GG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wheel__text wheel__text-4">
+                        <div class="wheel__bonus_wrap wheel__bonus-1">
+                            <div class="wheel__bonus">
+                                <span>30</span>
+                                <span class="en">FS</span>
+                                <span class="bg">FS</span>
+                                <span class="de">FS</span>
+                                <span class="fi">FS</span>
+                                <span class="pl">FS</span>
+                                <span class="pt">RG</span>
+                                <span class="es">TG</span>
+                                <span class="ro">RG</span>
+                                <span class="hu">IP</span>
+                                <span class="fr">TG</span>
+                                <span class="ph">LS</span>
+                                <span class="vn">QMP</span>
+                                <span class="th">FS</span>
+                                <span class="cz">ZZ</span>
+                                <span class="jp">FS</span>
+                                <span class="no">GS</span>
+                                <span class="gr">FS</span>
+                                <span class="lt">NS</span>
+                                <span class="lv">BG</span>
+                                <span class="se">GS</span>
+                                <span class="ee">TK</span>
+                                <span class="sk">ZZ</span>
+                                <span class="dk">GS</span>
+                                <span class="it">GG</span>
+                            </div>
+                        </div>
+                        <div class="wheel__bonus_wrap wheel__bonus-2">
+                            <div class="wheel__bonus">
+                                <span>100</span>
+                                <span class="en">FS</span>
+                                <span class="bg">FS</span>
+                                <span class="de">FS</span>
+                                <span class="fi">FS</span>
+                                <span class="pl">FS</span>
+                                <span class="pt">RG</span>
+                                <span class="es">TG</span>
+                                <span class="ro">RG</span>
+                                <span class="hu">IP</span>
+                                <span class="fr">TG</span>
+                                <span class="ph">LS</span>
+                                <span class="vn">QMP</span>
+                                <span class="th">FS</span>
+                                <span class="cz">ZZ</span>
+                                <span class="jp">FS</span>
+                                <span class="no">GS</span>
+                                <span class="gr">FS</span>
+                                <span class="lt">NS</span>
+                                <span class="lv">BG</span>
+                                <span class="se">GS</span>
+                                <span class="ee">TK</span>
+                                <span class="sk">ZZ</span>
+                                <span class="dk">GS</span>
+                                <span class="it">GG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fruits">
+                    <img src="images/fruits.png" alt="">
+                </div>
+
+                <div class="joker">
+                    <img src="images/joker.png" alt="">
+                </div>
+            </div>
+            <div class="cards game__hidden" id="cards">
+                <div class="cards__wrapper">
+                    <div class="card" data-attr="card1">
+                        <img class="card__img" src="images/card.png" alt="">
+                        <img class="card__anim card__anim1" src="images/anim.gif" alt="">
+                        <img class="card__anim card__anim2" src="images/anim2.gif" alt="">
+                        <img class="card__img_final" src="images/card-final.png" alt="">
+                        <div class="card__text">
+                            <div id="halfBonus">800 CAD</div>
+                        </div>
+                    </div>
+                    <div class="card" data-attr="card2">
+                        <img class="card__img" src="images/card.png" alt="">
+                        <img class="card__anim card__anim1" src="images/anim.gif" alt="">
+                        <img class="card__anim card__anim2" src="images/anim2.gif" alt="">
+                        <img class="card__img_final" src="images/card-final.png" alt="">
+                        <div class="card__text">
+                            <div id="halfBonus">800 CAD</div>
+                        </div>
+                    </div>
+                    <div class="card" data-attr="card3">
+                        <img class="card__img" src="images/card.png" alt="">
+                        <img class="card__anim card__anim1" src="images/anim.gif" alt="">
+                        <img class="card__anim card__anim2" src="images/anim2.gif" alt="">
+                        <img class="card__img_final" src="images/card-final.png" alt="">
+                        <div class="card__text">
+                            <div id="halfBonus">800 CAD</div>
+                        </div>
+                    </div>
+                    <div class="card" data-attr="card4">
+                        <img class="card__img" src="images/card.png" alt="">
+                        <img class="card__anim card__anim1" src="images/anim.gif" alt="">
+                        <img class="card__anim card__anim2" src="images/anim2.gif" alt="">
+                        <img class="card__img_final" src="images/card-final.png" alt="">
+                        <div class="card__text">
+                            <div id="halfBonus">800 CAD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="partners">
+                    <img class="partners__mob" src="images/partners-mob.png" alt="">
+                    <img class="partners__desk" src="images/partners.png" alt="">
+                </div>
+                <div class="footer__text">
+                    <p>
+                        Baytree Interactive Ltd (69691), a Guernsey registered company with registered address at Ground Floor, Kingsway House, Havilland Street, St Peter Port, Guernsey. Baytree Interactive Ltd is licensed by the Kahnawake Gaming Commission, license number: 00892 (issued 16 February 2022)
+                    </p>
+                    <p>© <span id="year">2024</span>  Jackpotcity Casino. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup__container">
+                <div class="popup__fire">
+                    <img src="images/popup-fire.png" alt="">
+                </div>
+                <div class="popup__fire_bg">
+                    <img src="images/popup-bg-fire.png" alt="">
+                </div>
+                <div class="popup__content" id="popup__first">
+                    <div class="popup__title_win text__gradient">
+                        <span class="en">YOU WON</span>
+                        <span class="bg">ТИ СПЕЧЕЛИ</span>
+                        <span class="ru">ВЫ ВЫИГ�&nbsp;АЛИ</span>
+                        <span class="de">SIE HABEN</span>
+                        <span class="fi">SINÄ VOITIT</span>
+                        <span class="pl">TWOJA WYGRANA TO</span>
+                        <span class="pt">VOCÊ GANHOU</span>
+                        <span class="es">GANASTE </span>
+                        <span class="ro">AI CASTIGAT</span>
+                        <span class="hu">ÖN NYERT</span>
+                        <span class="fr">TU AS GAGNÉ</span>
+                        <span class="ph">NANALO KA</span>
+                        <span class="vn">B�&nbsp;N ĐÃ THẮNG</span>
+                        <span class="th">คุณได้รับรางวัล</span>
+                        <span class="cz">VYHRÁL JSI</span>
+                        <span class="jp">あなたが勝った</span>
+                        <span class="no">DU VANT</span>
+                        <span class="gr">ΚΕΡΔΙΣΕΣ</span>
+                        <span class="lt">TU LAIMĖJAI </span>
+                        <span class="lv">TU UZVARĒJI</span>
+                        <span class="se">DU VANN</span>
+                        <span class="ee">SINA VÕITSID</span>
+                        <span class="sk">VYHRAL SI</span>
+                        <span class="ua">ВИ ВИГ�&nbsp;АЛИ</span>
+                        <span class="dk">DU VANDT</span>
+                        <span class="it">HAI VINTO</span>
+                    </div>
+                    <div class="popup__text_fs text__gradient">
+                        <span class="en">150 FREE SPINS</span>
+                        <span class="bg">150 БЕЗПЛАТНИ ЗАВ�&nbsp;ЪТАНИЯ</span>
+                        <span class="ru">150 бесплатных спинов</span>
+                        <span class="de">150 FREISPIELE</span>
+                        <span class="fi">150 ilmaista pyöriä</span>
+                        <span class="pl">150 DARMOWYCH OBROTÓW</span>
+                        <span class="pt">150 rodadas grátis</span>
+                        <span class="es">150 giros gratis</span>
+                        <span class="ro">150 rotiri gratuite</span>
+                        <span class="hu">150 ingyenes pörgetés</span>
+                        <span class="fr">150 tours gratuits</span>
+                        <span class="ph">150 libreng spins</span>
+                        <span class="vn">150 vòng quay<br> miễn phí</span>
+                        <span class="th">150 ฟรีสปิน</span>
+                        <span class="cz">150 Otočení zdarma</span>
+                        <span class="jp">150フリースピン</span>
+                        <span class="no">150 gratis spinn</span>
+                        <span class="gr">150 δωρεάν περιστροφές</span>
+                        <span class="lt">150 nemokamų sukimų</span>
+                        <span class="lv">150 bezmaksas griezieni</span>
+                        <span class="se">150 gratis snurr</span>
+                        <span class="ee">150 tasuta keerutust</span>
+                        <span class="sk">150 otočení zadarmo</span>
+                        <span class="ua">150 безкоштовних обертів</span>
+                        <span class="dk">150 gratis spins</span>
+                        <span class="it">150 giri gratuiti</span>
+                    </div>
+                    <button class="popup__button" id="popup__button_first">
+                        <span class="en">Continue</span>
+                        <span class="bg">Продължете</span>
+                        <span class="ru">Продолжать</span>
+                        <span class="de">FORTFAHREN</span>
+                        <span class="fi">Jatkaa</span>
+                        <span class="pl">Kontynuować</span>
+                        <span class="pt">Continuar</span>
+                        <span class="es">Continuar</span>
+                        <span class="ro">Continua</span>
+                        <span class="hu">Folytatni</span>
+                        <span class="fr">Continuer</span>
+                        <span class="ph">Magpatuloy</span>
+                        <span class="vn">Tiếp tục</span>
+                        <span class="th">ดำเนินการต่อ</span>
+                        <span class="cz">Pokračovat</span>
+                        <span class="jp">続く</span>
+                        <span class="no">Fortsette</span>
+                        <span class="gr">Να συνεχίσει</span>
+                        <span class="lt">Tęsti</span>
+                        <span class="lv">Turpināt</span>
+                        <span class="se">Fortsätta</span>
+                        <span class="ee">Jätkuma</span>
+                        <span class="sk">ďalej</span>
+                        <span class="ua">Продовжувати</span>
+                        <span class="dk">Blive ved</span>
+                        <span class="it">Continua</span>
+                    </button>
+                </div>
+                <div class="popup__content" id="popup__final">
+                    <div class="popup__title_final text__gradient">
+                        <span class="en">PICK UP YOUR WELCOME BONUS</span>
+                        <span class="bg">ВЗЕМЕТЕ ВАШИЯ БОНУС ЗА ДОБ�&nbsp;Е ДОШЛИ</span>
+                        <span class="ru">Возьми свой приветственный бонус</span>
+                        <span class="de">HOLEN SIE SICH IHREN WILLKOMMENSBONUS</span>
+                        <span class="fi">Nosta tervetuliaisbonus</span>
+                        <span class="pl">ODBIERZ SWÓJ BONUS POWITALNY</span>
+                        <span class="pt">Pegue seu bônus de boas -vindas </span>
+                        <span class="es">Recoge tu bonificación de bienvenida </span>
+                        <span class="ro">Ridicați bonusul dvs. de bun venit</span>
+                        <span class="hu">Vedd fel az üdvözlő bónuszát</span>
+                        <span class="fr">Procurez-vous votre bonus de bienvenue</span>
+                        <span class="ph">Kunin ang iyong maligayang pagdating bonus</span>
+                        <span class="vn">Nhận tiền thưởng ch�&nbsp;o mừng của bạn</span>
+                        <span class="th">รับโบนัสต้อนรับของคุณ </span>
+                        <span class="cz">Vyzvedněte si uvítací bonus</span>
+                        <span class="jp">ウェルカ�&nbsp;ボーナス</span>
+                        <span class="no">Hent din velkomstbonus </span>
+                        <span class="gr">�&nbsp;άρτε το μπόνους καλωσορίσματος </span>
+                        <span class="lt">Pasiimkite pasveikinimo premiją  </span>
+                        <span class="lv">Paņemiet savu laipno bonusu </span>
+                        <span class="se">Hämta din välkomstbonus </span>
+                        <span class="ee">Võtke oma teretulnud boonus </span>
+                        <span class="sk">Zoberte si uvítací bonus</span>
+                        <span class="ua">Отримайте свій вітальний бонус</span>
+                        <span class="dk">Hent din velkomstbonus</span>
+                        <span class="it">Prendi il tuo bonus di benvenuto</span>
+                    </div>
+                    <div class="popup__text_sum text__gradient">
+                        <div class="bonus">$1600</div>
+                    </div>
+                    <div class="popup__text_fs_final text__gradient">
+                        <span class="en">+ 150 FREE SPINS</span>
+                        <span class="bg">+ 150 БЕЗПЛАТНИ ЗАВ�&nbsp;ЪТАНИЯ</span>
+                        <span class="ru">+ 150 бесплатных спинов</span>
+                        <span class="de">+ 150 FREISPIELE</span>
+                        <span class="fi">+ 150 ilmaista pyöriä</span>
+                        <span class="pl">+ 150 DARMOWYCH OBROTÓW</span>
+                        <span class="pt">+ 150 rodadas grátis</span>
+                        <span class="es">+ 150 giros gratis</span>
+                        <span class="ro">+ 150 rotiri gratuite</span>
+                        <span class="hu">+ 150 ingyenes pörgetés</span>
+                        <span class="fr">+ 150 tours gratuits</span>
+                        <span class="ph">+ 150 libreng spins</span>
+                        <span class="vn">+ 150 vòng quay<br> miễn phí</span>
+                        <span class="th">+ 150 ฟรีสปิน</span>
+                        <span class="cz">+ 150 Otočení zdarma</span>
+                        <span class="jp">+ 150フリースピン</span>
+                        <span class="no">+ 150 gratis spinn</span>
+                        <span class="gr">+ 150 δωρεάν περιστροφές</span>
+                        <span class="lt">+ 150 nemokamų sukimų</span>
+                        <span class="lv">+ 150 bezmaksas griezieni</span>
+                        <span class="se">+ 150 gratis snurr</span>
+                        <span class="ee">+ 150 tasuta keerutust</span>
+                        <span class="sk">+ 150 otočení zadarmo</span>
+                        <span class="ua">+ 150 безкоштовних обертів</span>
+                        <span class="dk">+ 150 gratis spins</span>
+                        <span class="it">+ 150 giri gratuiti</span>
+                    </div>
+                    <div class="en"><a class="popup__button popup__button_final" href="#"><span>Claim bonus</span></a></div>
+                    <div class="bg"><a class="popup__button popup__button_final" href="#"><span>Изискайте бонус</span></a></div>
+                    <div class="de"><a class="popup__button popup__button_final" href="#"><span>Bonus Beanspruchen</span></a></div>
+                    <div class="fi"><a class="popup__button popup__button_final" href="#"><span>Vaatimusbonus</span></a></div>
+                    <div class="pl"><a class="popup__button popup__button_final" href="#"><span>Odbierz Bonus</span></a></div>
+                    <div class="pt"><a class="popup__button popup__button_final" href="#"><span>Bônus de reivindicação</span></a></div>
+                    <div class="es"><a class="popup__button popup__button_final" href="#"><span>Bono de reclamación</span></a></div>
+                    <div class="ro"><a class="popup__button popup__button_final" href="#"><span>Bonus de revendicare</span></a></div>
+                    <div class="hu"><a class="popup__button popup__button_final" href="#"><span>Bónusz követelése</span></a></div>
+                    <div class="fr"><a class="popup__button popup__button_final" href="#"><span>Banus de réclamation</span></a></div>
+                    <div class="ph"><a class="popup__button popup__button_final" href="#"><span>Mag -claim ng Bonus</span></a></div>
+                    <div class="vn"><a class="popup__button popup__button_final" href="#"><span>Yêu cầu tiền thưởng</span></a></div>
+                    <div class="th"><a class="popup__button popup__button_final" href="#"><span>รับโบนัส</span></a></div>
+                    <div class="cz"><a class="popup__button popup__button_final" href="#"><span>Nárok bonus</span></a></div>
+                    <div class="jp"><a class="popup__button popup__button_final" href="#"><span>クレー�&nbsp;ボーナス</span></a></div>
+                    <div class="no"><a class="popup__button popup__button_final" href="#"><span>Krev bonus</span></a></div>
+                    <div class="gr"><a class="popup__button popup__button_final" href="#"><span>Διεκδικήστε μπόνους</span></a></div>
+                    <div class="lt"><a class="popup__button popup__button_final" href="#"><span>Reikalauti premijos</span></a></div>
+                    <div class="lv"><a class="popup__button popup__button_final" href="#"><span>Pieprasīt bonusu</span></a></div>
+                    <div class="se"><a class="popup__button popup__button_final" href="#"><span>Fordringsbonus</span></a></div>
+                    <div class="ee"><a class="popup__button popup__button_final" href="#"><span>Nõude boonus</span></a></div>
+                    <div class="sk"><a class="popup__button popup__button_final" href="#"><span>Bonus</span></a></div>
+                    <div class="dk"><a class="popup__button popup__button_final" href="#"><span>Krav bonus</span></a></div>
+                    <div class="it"><a class="popup__button popup__button_final" href="#"><span>Bonus di reclamo</span></a></div>
+                    <div class="terms">
+                        <a href="#" class="terms__link en"><span>Bonus T&amp;C's</span></a>
+                        <a href="#" class="terms__link bg"><span>Правила и условия на бонуса</span></a>
+                        <a href="#" class="terms__link ru"><span>Правила и условия</span></a>
+                        <a href="#" class="terms__link de"><span>Bonus T&amp;Cs</span></a>
+                        <a href="#" class="terms__link fi"><span>Bonus T&amp;C:t</span></a>
+                        <a href="#" class="terms__link pl"><span>Bonus T&amp;C</span></a>
+                        <a href="#" class="terms__link pt"><span>Bônus T&amp;C's</span></a>
+                        <a href="#" class="terms__link es"><span>Bonus T&amp;C's</span></a>
+                        <a href="#" class="terms__link ro"><span>Bonus T&amp;C</span></a>
+                        <a href="#" class="terms__link hu"><span>Bónusz T&amp;C</span></a>
+                        <a href="#" class="terms__link fr"><span>Bonus T&amp;C</span></a>
+                        <a href="#" class="terms__link ph"><span>Bonus T&amp;C's</span></a>
+                        <a href="#" class="terms__link vn"><span>Tiền thưởng T &amp; C</span></a>
+                        <a href="#" class="terms__link th"><span>โบนัส T&amp;C</span></a>
+                        <a href="#" class="terms__link cz"><span>Bonus T&amp;C</span></a>
+                        <a href="#" class="terms__link jp"><span>ボーナスT＆C</span></a>
+                        <a href="#" class="terms__link gr"><span>Μπόνους T &amp; C's</span></a>
+                        <a href="#" class="terms__link lt"><span>Premija T&amp;C</span></a>
+                        <a href="#" class="terms__link lv"><span>Bonuss t &amp; c</span></a>
+                        <a href="#" class="terms__link se"><span>Bonusvillkor</span></a>
+                        <a href="#" class="terms__link ee"><span>Boonus T &amp; C -d</span></a>
+                        <a href="#" class="terms__link sk"><span>Bonus T&amp;C</span></a>
+                        <a href="#" class="terms__link ua"><span>Правила та умови</span></a>
+                        <a href="#" class="terms__link no"><span>Bonus T &amp; C-er</span></a>
+                        <a href="#" class="terms__link dk"><span>Bonus T &amp; C'er</span></a>
+                        <a href="#" class="terms__link it"><span>Bonus T&amp;C's</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
