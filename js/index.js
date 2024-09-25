@@ -112,15 +112,15 @@ document.addEventListener('DOMContentLoaded', () => {
         spinner.classList.add('wheel__spinner_animated_1'); // Restart animation
     };
 
-    lights.forEach(light => {
-        gsap.to(light, {
-            opacity: 0,
-            duration: 1,
-            repeat: -1,
-            yoyo: true,
-            ease: "power1.inOut",
-        });
-    });
+    // lights.forEach(light => {
+    //     gsap.to(light, {
+    //         opacity: 0,
+    //         duration: 1,
+    //         repeat: -1,
+    //         yoyo: true,
+    //         ease: "power1.inOut",
+    //     });
+    // });
 
     const borderImage = document.querySelector('.border-image');
     const borderImagePopupOn = document.querySelector('.border-image.popup-on');
@@ -142,5 +142,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (spinCount >= 3) {
         againButton.style.display = 'none';
     }
+
+
+
+
+    const scrollBlock = document.querySelector('.block-scroll');
+    const blurAccordion = document.querySelector('.blur-accordion');
+
+    const hideBlurOnScroll = () => {
+        const scrollHeight = scrollBlock.scrollHeight;
+        const scrollPosition = scrollBlock.scrollTop + scrollBlock.offsetHeight;
+
+        if (scrollPosition >= scrollHeight - 50) {
+            gsap.to(blurAccordion, { opacity: 0, duration: 1 });
+        } else {
+            gsap.to(blurAccordion, { opacity: 1, duration: 1 });
+        }
+    };
+
+    scrollBlock.addEventListener('scroll', () => hideBlurOnScroll());
+
 
 });
