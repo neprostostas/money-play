@@ -2840,7 +2840,8 @@ html.es.cur_cl .es .txt_cur_ar {
         z-index: 4;
         width: 376px ;
         height: 376px ;
-        bottom: 274px ;
+        /*bottom: 274px ;*/
+        bottom: 28vmax;
     }
 
     .wheel__spinner {
