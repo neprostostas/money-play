@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+
+
     const html = document.querySelector('html'),
         currLangDom = document.querySelector('.curr_lang'),
         preloader = document.querySelector('.preloader'),
@@ -11,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bonus = [...document.querySelectorAll('.bonus')],
         halfBonus = [...document.querySelectorAll('#halfBonus')],
         country = html.getAttribute('data-country');
+
 
     const hidePreloader = () => {
         html.classList.remove('hide');
