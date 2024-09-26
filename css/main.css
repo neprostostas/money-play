@@ -958,18 +958,15 @@ html .bg {
     color: rgba(214, 222, 255, 0.90);
     text-align: center;
     font-family: "Roboto", sans-serif;
-    font-size: 0.68vw;
-    /*font-size: 13px;*/
+    font-size: clamp(11px, 0.68vw, 13px); /* Мінімум 11px, гнучкий 0.68vw, максимум 13px */
     font-style: normal;
     font-weight: 300;
-    line-height: 1.02vw;
-    /*line-height: 19.5px;*/
-    letter-spacing: 0.034vw;
-    /* letter-spacing: 0.65px */
+    line-height: clamp(19.5px, 1.02vw, 20px); /* Мінімум 19.5px, гнучкий 1.02vw, максимум 20px */
+    letter-spacing: clamp(0.65px, 0.034vw, 1px); /* Мінімум 0.65px, гнучкий 0.034vw, максимум 1px */
     max-width: 43.80vw;
-    /*max-width: 841px;*/
     width: 100%;
 }
+
 
 a.link {
     cursor: pointer;
@@ -1711,16 +1708,12 @@ a.link {
 .terms-text {
     color: #D6DEFF;
     font-family: "Roboto", sans-serif;
-    font-size: 0.73vw;
-    /* font-size: 14px */
+    font-size: clamp(14px, 0.73vw, 16px);
     font-style: normal;
     font-weight: 300;
-    line-height: 1.09vw;
-    /* line-height: 21px */
-    letter-spacing: 0.036vw;
-    /* letter-spacing: 0.7px */
-    padding-bottom: 0.62vw;
-    /* padding-bottom: 12px */
+    line-height: clamp(21px, 1.09vw, 24px);
+    letter-spacing: clamp(0.7px, 0.036vw, 1px);
+    padding-bottom: clamp(12px, 0.62vw, 16px);
 }
 
 .terms-text.last {
@@ -1731,17 +1724,14 @@ a.link {
     color: #E5EAFF;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    font-size: 1.04vw;
-    /* font-size: 20px */
+    font-size: clamp(20px, 1.04vw, 24px);
     font-style: normal;
     font-weight: 500;
-    line-height: 1.56vw;
-    /* line-height: 30px */
-    letter-spacing: 0.052vw;
-    /* letter-spacing: 1px */
-    padding-bottom: 1.67vw;
-    /* padding-bottom: 32px */
+    line-height: clamp(30px, 1.56vw, 36px);
+    letter-spacing: clamp(1px, 0.052vw, 1.2px);
+    padding-bottom: clamp(32px, 1.67vw, 40px);
 }
+
 
 .policy {
     padding-top: 1.67vw;
@@ -1767,18 +1757,14 @@ a.link {
 }
 
 .text-terms-title {
-    margin: 1.25vw 0;
-    /* margin: 24px 0 */
+    margin: clamp(24px, 1.25vw, 28px) 0;
     color: #F6F6F6;
     font-family: "Roboto", sans-serif;
-    font-size: 0.83vw;
-    /* font-size: 16px */
+    font-size: clamp(16px, 0.83vw, 18px);
     font-style: normal;
     font-weight: 400;
-    line-height: 1.25vw;
-    /* line-height: 24px */
-    letter-spacing: 0.042vw;
-    /* letter-spacing: 0.8px */
+    line-height: clamp(24px, 1.25vw, 28px);
+    letter-spacing: clamp(0.8px, 0.042vw, 1px);
     text-decoration-line: underline;
 }
 
@@ -1786,14 +1772,11 @@ a.link {
     cursor: pointer;
     color: #FFF;
     font-family: "Roboto", sans-serif;
-    font-size: 0.73vw;
-    /* font-size: 14px */
+    font-size: clamp(14px, 0.73vw, 16px);
     font-style: normal;
     font-weight: 400;
-    line-height: 1.09vw;
-    /* line-height: 21px */
-    letter-spacing: 0.036vw;
-    /* letter-spacing: 0.7px */
+    line-height: clamp(21px, 1.09vw, 24px);
+    letter-spacing: clamp(0.7px, 0.036vw, 1px);
     text-decoration-line: underline;
 }
 
@@ -1849,22 +1832,22 @@ a.link {
     /* letter-spacing: 1.4px */
 }
 
-.accordion .tab-content p {
-    padding: 0.31vw 0;
-    /* padding: .6rem 0 */
-    margin: 0.52vw 0;
-    /* margin: 1em 0 */
+.accordion .tab-content p, .tab td ul li {
+    padding: clamp(10px, 0.31vw, 12px) 0;
+    margin: clamp(16px, 0.52vw, 18px) 0;
 
     color: #D6DEFF;
     font-family: "Roboto", sans-serif;
-    font-size: 0.73vw;
-    /* font-size: 14px */
+    font-size: clamp(14px, 0.73vw, 16px);
     font-style: normal;
     font-weight: 300;
-    line-height: 1.09vw;
-    /* line-height: 21px */
-    letter-spacing: 0.036vw;
-    /* letter-spacing: 0.7px */
+    line-height: clamp(21px, 1.09vw, 24px);
+    letter-spacing: clamp(0.7px, 0.036vw, 1px);
+}
+
+.accordion .tab-content p, .tab td ul {
+    margin-left: 2.08vw;
+    /* margin-left: 40px */
 }
 
 .accordion {
@@ -1906,14 +1889,11 @@ a.link {
     cursor: pointer;
     color: #FFF;
     font-family: "Roboto", sans-serif;
-    font-size: 0.83vw;
-    /* font-size: 16px */
+    font-size: clamp(16px, 0.83vw, 18px);
     font-style: normal;
     font-weight: 400;
-    line-height: 1.25vw;
-    /* line-height: 24px */
-    letter-spacing: 0.042vw;
-    /* letter-spacing: 0.8px */
+    line-height: clamp(24px, 1.25vw, 28px);
+    letter-spacing: clamp(0.8px, 0.042vw, 1px);
 }
 
 .accordion label {
@@ -2007,19 +1987,14 @@ a.link {
     cursor: pointer;
     color: #2565ca;
 
-    padding: 0.31vw 0;
-    /* padding: .6rem 0 */
-    margin: 0.52vw 0;
-    /* margin: 1em 0 */
+    padding: clamp(10px, 0.31vw, 12px) 0;
+    margin: clamp(16px, 0.52vw, 18px) 0;
     font-family: "Roboto", sans-serif;
-    font-size: 0.73vw;
-    /* font-size: 14px */
+    font-size: clamp(14px, 0.73vw, 16px);
     font-style: normal;
     font-weight: 300;
-    line-height: 1.5vw;
-    /* line-height: 28px */
-    letter-spacing: 0.036vw;
-    /* letter-spacing: 0.7px */
+    line-height: clamp(28px, 1.5vw, 32px);
+    letter-spacing: clamp(0.7px, 0.036vw, 1px);
 }
 
 .content-area ul li a {
@@ -2178,27 +2153,12 @@ a.link {
     color: rgba(214, 222, 255, 0.90);
     text-align: center;
     font-family: "Roboto", sans-serif;
-    font-size: 0.68vw;
-    /* font-size: 13px */
+    font-size: clamp(11px, 0.68vw, 13px); /* Мінімум 11px, гнучкий 0.68vw, максимум 13px */
     font-style: normal;
     font-weight: 300;
-    line-height: 1.02vw;
-    /* line-height: 19.5px */
-    letter-spacing: 0.034vw;
-    /* letter-spacing: 0.65px */
+    line-height: clamp(19.5px, 1.02vw, 20px); /* Мінімум 19.5px, гнучкий 1.02vw, максимум 20px */
+    letter-spacing: clamp(0.65px, 0.034vw, 1px); /* Мінімум 0.65px, гнучкий 0.034vw, максимум 1px */
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .links-top {
@@ -3435,6 +3395,9 @@ html.es.cur_cl .es .txt_cur_ar {
 
 
 
+    .accordion .tab-content p, .tab td ul {
+         margin-left: 40px
+    }
 
 
     .links-top {
@@ -3559,7 +3522,7 @@ html.es.cur_cl .es .txt_cur_ar {
         letter-spacing: 1.4px;
     }
 
-    .accordion .tab-content p {
+    .accordion .tab-content p, .tab td ul li {
         padding: .6rem 0;
         margin: 1em 0;
         color: #D6DEFF;
@@ -3952,6 +3915,10 @@ html.es.cur_cl .es .txt_cur_ar {
 
 
 
+    .accordion .tab-content p, .tab td ul {
+        margin-left: 40px
+    }
+
 
     .links-top {
         gap: 5px;
@@ -4086,7 +4053,7 @@ html.es.cur_cl .es .txt_cur_ar {
         letter-spacing: 0.98px;
     }
 
-    .accordion .tab-content p {
+    .accordion .tab-content p, .tab td ul li {
         padding: .42rem 0;
         margin: 0.7em 0;
         color: #D6DEFF;
