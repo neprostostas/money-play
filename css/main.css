@@ -3940,7 +3940,6 @@ html.es.cur_cl .es .txt_cur_ar {
 
 
 
-
     .links-top {
         gap: 5px;
     }
@@ -4277,7 +4276,8 @@ html.es.cur_cl .es .txt_cur_ar {
     }
 
     .wheel {
-        transform: translate(-50%, 0%) scale(0.6);
+        /*transform: translate(-50%, 0%) scale(0.6);*/
+        transform: translate(-50%, 0%);
         /*scale: 1.3;*/
         z-index: 4;
         width: 376px ;
