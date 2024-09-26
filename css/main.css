@@ -1098,7 +1098,7 @@ a.link {
     bottom: 7.5vmax;
     /* bottom: 144px */
     left: 50%;
-    transform: translate(-50%, 0%) scale(1.3);
+    transform: translate(-50%, 0%) scale(1.2);
 }
 
 .wheel__spinner-on {
@@ -4276,14 +4276,13 @@ html.es.cur_cl .es .txt_cur_ar {
     }
 
     .wheel {
-        /*transform: translate(-50%, 0%) scale(0.6);*/
-        transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%) scale(0.8);
         /*scale: 1.3;*/
         z-index: 4;
         width: 376px ;
         height: 376px ;
         /*bottom: 274px ;*/
-        bottom: 28vmax;
+        bottom: 25vmax;
     }
 
     .wheel__spinner {
