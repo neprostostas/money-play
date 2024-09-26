@@ -163,33 +163,4 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollBlock.addEventListener('scroll', () => hideBlurOnScroll());
 
 
-
-
-
-
-
-
-
-
-    scrollBlock.addEventListener('touchstart', function(event) {
-        const startY = event.touches[0].clientY;
-        scrollBlock.addEventListener('touchmove', function(event) {
-            const currentY = event.touches[0].clientY;
-            const scrollTop = scrollBlock.scrollTop;
-            const scrollHeight = scrollBlock.scrollHeight;
-            const blockHeight = scrollBlock.clientHeight;
-
-            // Перевіряємо чи на початку або в кінці блоку
-            if (scrollTop === 0 && currentY > startY) {
-                // Якщо на початку блоку і користувач тягне вниз
-                event.preventDefault(); // Забороняємо блокування скролу
-            } else if (scrollTop + blockHeight >= scrollHeight && currentY < startY) {
-                // Якщо в кінці блоку і користувач тягне вгору
-                event.preventDefault(); // Забороняємо блокування скролу
-            }
-        });
-    });
-
-
-
 });
