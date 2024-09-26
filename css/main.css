@@ -4276,13 +4276,13 @@ html.es.cur_cl .es .txt_cur_ar {
     }
 
     .wheel {
-        transform: translate(-50%, 0%) scale(0.8);
+        transform: translate(-50%, 0%) scale(1);
         /*scale: 1.3;*/
         z-index: 4;
         width: 376px ;
         height: 376px ;
         /*bottom: 274px ;*/
-        bottom: 25vmax;
+        bottom: 28vmax;
     }
 
     .wheel__spinner {
