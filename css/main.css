@@ -1260,6 +1260,21 @@ a.link {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    animation: animText 1.3s ease-in-out infinite;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes animText {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 
@@ -2172,8 +2187,6 @@ a.link {
     letter-spacing: 0.034vw;
     /* letter-spacing: 0.65px */
 }
-
-
 
 
 
